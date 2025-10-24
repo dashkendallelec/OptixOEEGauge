@@ -1,0 +1,7 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: OEE_Value
+  Type: BaseDataVariableType
+  DataType: Float
+- File: OEE_Config/OEE_Config.yaml

@@ -1,0 +1,44 @@
+Project:
+ Name: OptixOEEGauge
+ GUID: a35d69702e1915789c09e64732e0a2e7
+ ProjectNamespaceIndex: 7
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ ProductVersion: 1.6
+ CoreVersion: 4.2
+ Dependencies:
+  2:
+   Uri: 'urn:FTOptix:CoreBase'
+   Module: FTOptix.CoreBase
+   Version: 5.0
+  3:
+   Uri: 'urn:FTOptix:UI'
+   Module: FTOptix.UI
+   Version: 18.1
+  4:
+   Uri: 'urn:FTOptix:Retentivity'
+   Module: FTOptix.Retentivity
+   Version: 1.0
+  5:
+   Uri: 'urn:FTOptix:HMIProject'
+   Module: FTOptix.HMIProject
+   Version: 7.1
+  6:
+   Uri: 'urn:FTOptix:NativeUI'
+   Module: FTOptix.NativeUI
+   Version: 3.1
+ Statistics:
+  TotalNodeCount: 328
+  Objects: 110
+  ObjectTypes: 5
+  Variables: 213
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 0
+  References: 0
+  ReferenceTypes: 0
+  Files: 25
+ Nodes:
+ - File: Nodes/OptixOEEGauge.yaml

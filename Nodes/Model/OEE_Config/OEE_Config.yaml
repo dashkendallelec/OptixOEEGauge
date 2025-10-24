@@ -1,0 +1,18 @@
+Name: OEE_Config
+Type: FolderType
+Children:
+- Name: OEE_ColorConfig
+  Type: BaseObjectType
+  Children:
+  - Name: MaxRed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+  - Name: MaxYellow
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 85
+  - Name: MaxGreen
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 300

@@ -1,0 +1,115 @@
+Name: Converters
+Type: ConvertersCategoryFolder
+Children:
+- Name: kvOEEColor
+  Id: g=3652009667a9c3528c87114e686cd61f
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+  - Name: ns=2;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair1
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Int32
+        ModellingRule: None
+        Value: 1
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#eb001b"
+    - Name: Pair2
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Int32
+        ModellingRule: None
+        Value: 2
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#ffce1b"
+    - Name: Pair3
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Int32
+        ModellingRule: None
+        Value: 3
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#008000"
+    - Name: Pair4
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: Int32
+        ModellingRule: None
+        Value: 4
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#ffffff"
+- Name: expOEEColor
+  Id: g=37328d7951083bd3ea979ead7d5ea074
+  Supertype: ExpressionEvaluator
+  ReferenceType: HasComponent
+  Children:
+  - Name: Expression
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "if({#Value}<{#MaxRed}, 1, if({#Value}>={#MaxRed}&&{#Value}<{#MaxYellow},2,if({#Value}>={#MaxYellow}&&{#Value}<{#MaxGreen},3,4)))"
+  - Name: ns=2;SourceValue
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+  - Name: ns=2;SourceMaxRed
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+  - Name: ns=2;SourceMaxYellow
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+  - Name: ns=2;SourceMaxGreen
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
